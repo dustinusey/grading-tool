@@ -1,0 +1,10 @@
+.main-content {
+    background-color: $white1;
+    @include size(100%, 100%);
+    border-radius: $br-10;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        &.compact-main-content {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+}

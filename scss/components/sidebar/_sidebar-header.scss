@@ -1,0 +1,24 @@
+.sidebar-header {
+    margin-bottom: 0;
+    padding: 10px;
+    & .top {
+        @include flex(row, nowrap, center, center);
+        font-size: .8em;
+        color: $white2;
+            & img {
+                margin-right: 10px;
+            }
+    }
+    & h2 {
+        color: $accent1;
+        text-align: center;
+        font-size: 1em;
+        margin-top: 6px;
+    }
+    & .custom-divider {
+        @include size(3px, 100%);
+        background: rgba($white2, 0.5);
+        border-radius: 25px;
+        margin-top: 10px;
+    }
+}

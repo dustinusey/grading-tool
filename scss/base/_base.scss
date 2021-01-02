@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include size(100vh, 100%);
+    @include flex(column, nowrap, center, center);
+    background-color: $container1;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}

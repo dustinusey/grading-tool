@@ -1,0 +1,39 @@
+.tool-wrapper {
+    background-color: $container2;
+    @include simpleSize(100%);
+    @include flex(row, nowrap, center, center);
+    max-width: $page-size;
+    min-height: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: $t3;
+    display: none;
+}
+
+.notice {
+    @include size(350px, 85%);
+    background-color: $white2;
+    @include flex(row, nowrap, center, center);
+    padding: 45px;
+    text-align: center;
+    border-radius: $br-10;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    .tool-wrapper {
+        display: flex;
+    }
+    .notice {
+        display: none;
+    }
+}
+
+@media (min-width: $page-size) {
+    .tool-wrapper {
+        @include simpleSize(90%);
+        border-radius: $br-10;
+    }
+}
