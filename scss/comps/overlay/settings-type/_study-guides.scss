@@ -1,0 +1,40 @@
+section.study-guide-settings {
+    & a {
+        text-decoration: none;
+        color: var(--text);
+    }
+    & .study-guide-list {
+        width: 100%;
+            & li {
+                margin: 25px auto 10px;
+                width: 100%;
+                    &:first-child {
+                        margin-top: 20px;
+                    }
+                    & .link-name {
+                        color: var(--text);
+                    }
+                    & div {
+                        background: rgb(238, 238, 238);
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin: 5px 0;
+                        @include flex(row, nowrap, flex-start, center);
+                        transition: .3s;
+                        border-left: 1px solid var(--side-panel);
+                        &:hover {
+                            background: rgb(224, 224, 224);
+                            margin-left: 10px;
+                        }
+                        & i {
+                            margin-right: 10px;
+                            color:var(--side-panel);
+                        }
+                        & p {
+                            color: rgb(89, 100, 104);
+                            font-size: .9em;
+                        }
+                    }
+            }
+    }
+}

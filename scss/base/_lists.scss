@@ -1,0 +1,25 @@
+* li {
+    color: var(--project-name-card-text);
+    cursor: pointer;
+}
+
+.side-panel ul {
+    width: 100%;
+    padding: 15px;
+        & li {
+            background: var(--project-name-card-bg);
+            width: 100%;
+            text-align: center;
+            padding: 10px 15px;
+            margin: 5px auto 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .3s;
+                &.active {
+                    background: var(--project-name-card-bg-active);
+                    background: var(--tool-bg);
+                    margin-left: 25px;
+                    color: var(--text);
+                }
+        }
+}

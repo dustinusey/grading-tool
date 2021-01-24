@@ -1,0 +1,45 @@
+@mixin flex($dir, $wrap, $just, $align) {
+    @content;
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin simpleFlex() {
+    @content;
+    dispay: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin size($height, $width) {
+    @content;
+    height: $height;
+    width: $width;
+}
+
+@mixin simpleSize($size) {
+    @content;
+    height: $size; width: $size;
+}
+
+@mixin absoluteCenter() {
+    @content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+@mixin panelStyles($width) {
+    @content;
+    background: var(--side-panel);
+    @include size(100%, $width);
+    min-width: $width;
+    max-width: $width;
+    @include flex(column, nowrap, flex-start, center);
+}

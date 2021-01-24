@@ -1,0 +1,112 @@
+@keyframes imageSlide {
+    0% {
+        margin-top: -50px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 15px;
+        opacity: 1;
+    }
+}
+
+section.theme-settings {
+    @include flex(column, nowrap, flex-start, flex-start);
+        & .pre-made-theme-selector-container {
+            @include flex(row, nowrap, space-evenly, center);
+            width: 100%;
+                & .pre-made-theme-list {
+                    padding: 10px 5px;
+                    width: 100%;
+                    margin: auto;
+                        & li {
+                            background: rgb(241, 241, 241);
+                            color: var(--text);
+                            width: 250px;
+                            padding: 10px;
+                            margin: 3px auto;
+                            border-radius: 10px;
+                            @include flex(row, nowrap, flex-start, center);
+                            transition: .3s;
+                                &:hover {
+                                    background:  rgb(224, 224, 224);
+                                }
+                                &.active {
+                                    background:  rgb(224, 224, 224);
+                                }
+                                & .theme-pallet-div {
+                                    pointer-events: none;
+                                    @include flex(row, nowrap, flex-start, center);
+                                        & div {
+                                            border-radius: 50%;
+                                            @include simpleSize(25px);
+                                        }
+                                        & .main-color {
+                                        }
+                                        & .accent-color {
+                                            margin-left: -8px;
+                                        } 
+                                }
+                                & p {
+                                    margin-left: 10px;
+                                    pointer-events: none;
+                                }
+                        }
+                }
+                & img {
+                    margin: auto;
+                    height: 190px;
+                    animation: imageSlide .4s ease forwards;
+                }
+                & img.hidden-theme-img {
+                    display: none;
+                }
+        }
+        & h3 {
+            margin: 25px 0 10px 0;
+        }
+        & p {
+            color: rgb(97, 106, 112);
+            font-size: .9em;
+                &.custom-disclaimer {
+                    margin-bottom: 25px;
+                }
+        }
+
+
+        & .custom-theme-input-group {
+            width: 100%;
+            @include flex(row, nowrap, flex-start, center);
+                & div:first-child {
+                    margin-right: 15px;
+                }
+                & div {
+                    position: relative;
+                    & .color-div {
+                        @include simpleSize(28px);
+                        border-radius: 5px;
+                        background: rgb(233, 233, 233);
+                        position: absolute;
+                        top: 25px;
+                        left: 5px;
+                    }
+                }
+                & input {
+                    padding: 10px;
+                    border: 1px solid lightgray;
+                    border-radius: 5px;
+                    padding-left: 45px;
+                }
+        }
+
+        & .custom-theme-apply {
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            background: rgb(228, 227, 227);
+            padding: 8px 15px;
+                &.active {
+                    background: var(--accent);
+                    cursor: pointer;
+                }
+        }
+}

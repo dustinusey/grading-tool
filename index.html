@@ -19,7 +19,125 @@
 
     <title>Treehouse Grading Tool V2</title>
 </head>
-<body>
+<body class="treehouse-og">
+
+    <!-- overlay content -->
+    <div class="overlay">
+        <div class="settings-container">
+            <!-- side panel -->
+            <div class="side-panel">
+                <ul>
+                    <li class="active settings-list-item">Themes</li>
+                    <li class="settings-list-item">Quick Links</li>
+                    <li class="settings-list-item">Study Guides</li>
+                </ul>
+            </div>
+            <!-- / side panel -->
+            <div class="settings-panel">
+                <div class="close-container settings-content">
+                    <i class="fas fa-times"></i>
+                </div>
+                
+                <!-- themes -->
+                <section class="theme-settings">
+                    <h2>Themes</h2>
+                    <div class="pre-made-theme-selector-container">
+                        <!-- child1 -->
+                        <ul class="pre-made-theme-list">
+                            <li class="active">
+                                <div class="theme-pallet-div">
+                                    <div class="main-color treehouse-og-main-color"></div>
+                                    <div class="accent-color treehouse-og-accent-color"></div>
+                                </div>
+                                <p>Treehouse OG</p>
+                            </li>
+                            <li>
+                                <div class="theme-pallet-div">
+                                    <div class="main-color purplicious-main-color"></div>
+                                    <div class="accent-color purplicious-accent-color"></div>
+                                </div>
+                                <p>Purplicious</p>
+                            </li>
+                            <li>
+                                <div class="theme-pallet-div">
+                                    <div class="main-color blue-stone-main-color"></div>
+                                    <div class="accent-color blue-stone-accent-color"></div>
+                                </div>
+                                <p>Blue Stone</p>
+                            </li>
+                            <li>
+                                <div class="theme-pallet-div">
+                                    <div class="main-color wine-main-color"></div>
+                                    <div class="accent-color wine-accent-color"></div>
+                                </div>
+                                <p>Wine</p>
+                            </li>
+                        </ul>
+                        <!-- child2 -->
+                        <img src="./assets/themes/og-theme-image.png" alt="Theme preview for Treehouse-OG theme" class="treehouse-og-img">
+                        <img src="./assets/themes/purplicious-theme.png" alt="Theme preview for Purplicious theme" class="purplicious-img hidden-theme-img">
+                        <img src="./assets/themes/blue-stone-theme.png" alt="Theme preview for Blue Stone theme" class="blue-stone-img hidden-theme-img">
+                        <img src="./assets/themes/wine-theme.png" alt="Theme preview for wine theme" class="wine-img hidden-theme-img">
+                    </div>
+                    <h3>Create a Custom Theme</h3>
+                    <p class="custom-disclaimer">Creating your own theme is simple and fun! First, choose a base color. This will be the color for your left-most panel. Then choose your accent color. You can use hexadecimal values as well as rgb or rgba values. When you hit ‘save’ your changes will be saved and remembered next time you use the grading tool. Choosing a pre-built theme will discard your changes and they will be lost. </p>
+                    <div class="custom-theme-input-group">
+                        <div>
+                            <h4>Base Color:</h4>
+                            <input class="base-color-input" type="text">
+                            <div class="color-div base-color-div"></div>
+                        </div>
+                        <div>
+                            <h4>Accent Color:</h4>
+                            <input class="accent-color-input" type="text">
+                            <div class="color-div accent-color-div"></div>
+                        </div>
+                    </div>
+                    <button class="custom-theme-apply">Apply</button>
+                </section>
+
+                <!-- quick links -->
+                <section class="quick-links-settings section-hide">
+                    <h2>Quick Links</h2>
+                    <ul class="quick-links-list">
+                        <!-- ... -->
+                    </ul>
+                </section>
+
+                <!-- study guides -->
+                <section class="study-guide-settings section-hide">
+                    <h2>Study Guides</h2>
+                    <ul class="study-guide-list">
+                        <!-- ... -->
+                    </ul>
+                    
+                </section>
+            </div>
+        </div>
+        
+    </div>
+    <!-- / overlay content -->
+
+    <div class="disclaimer">
+        <p>Please make sure your browser is at least 768px+ to use this tool.</p>
+    </div>
+
+    <div class="grading-container">
+        <!-- side panel -->
+        <section class="side-panel"></section>
+        <!-- / side panel -->
+
+        <!-- tool panel -->
+        <section class="tool-panel"></section>
+        <!-- / tool panel -->
+    </div>
+
+    <!-- dev -->
+    <div class="dev">
+        <hr>
+        <p>Developed by Dustin usey </p>
+        <img src="./assets/icons/20336-9-megaman-picture.png" alt="Mega Man Icon">
+    </div>
     
 
     <script src="./js/data.js"></script>

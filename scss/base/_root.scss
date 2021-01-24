@@ -1,0 +1,89 @@
+:root {
+    --main-bg: #D7D7D8;
+    --tool-bg: #F2F5F6;
+    --side-panel: #323A46;
+    --accent: #53F4BA;
+
+    --text: #323A46;
+    --nav-icons: #D7D7D8;
+
+    --project-name-card-text: #D7D7D8;
+    --project-name-card-bg: #2C3441;
+    --project-name-card-bg-active: #4B535F;
+
+    --progress-bar: #53F4BA;
+}
+
+
+body.treehouse-og {
+    --side-panel: #323A46;
+    --accent: #53F4BA;
+
+    --project-name-card-bg: #2C3441;
+    --project-name-card-bg-active: #4B535F;
+    
+    --progress-bar: #53F4BA;
+}
+
+
+body.purplicious {
+    --side-panel: #534E6F;
+    --accent: #FFFFFF;
+
+    --project-name-card-bg: #7B799D;
+    --project-name-card-bg-active: #7E76B2;
+    
+    --progress-bar:  #7E76B2;
+}
+
+body.blue-stone {
+    --side-panel: #4B5363;
+    --accent: #FFFFFF;
+
+    --project-name-card-bg: #373E4E;
+    --project-name-card-bg-active: #6EADBB;
+
+    --progress-bar: #6EADBB;
+}
+
+body.wine {
+    --side-panel: #4B5363;
+    --accent: #FFFFFF;
+
+    --project-name-card-bg: #BD879A;
+    --project-name-card-bg-active: #727A8A;
+
+    --progress-bar: #BD879A;
+}
+
+
+
+
+// theme class colors
+.treehouse-og-main-color {
+    background: #323A46;
+}
+.treehouse-og-accent-color {
+    background:#53F4BA;
+}
+
+.purplicious-main-color {
+    background: #534E6F;
+}
+.purplicious-accent-color {
+    background: #7E76B2;
+}
+
+.blue-stone-main-color {
+    background: #4B5363;
+}
+.blue-stone-accent-color {
+    background:#6EADBB;
+}
+
+.wine-main-color {
+    background: #4B5363;
+}
+.wine-accent-color {
+    background:  #BD879A;
+}

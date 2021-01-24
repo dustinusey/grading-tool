@@ -8,5 +8,21 @@
 }
 
 body {
-    
+    @include flex(column, nowrap, space-evenly, center);
+    color: var(--text);
+    transition: all .3s ease;
+    height: 100vh;
+    background: var(--main-bg);
+    position: relative;
 }
+
+.disclaimer {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+ @media (min-width: 768px) {
+     .disclaimer {
+         display: none;
+     }
+ }

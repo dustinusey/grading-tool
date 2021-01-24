@@ -1,0 +1,23 @@
+.overlay {
+    @include flex(row, nowrap, center, center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(23, 37, 46, 0.45);
+    pointer-events: none;
+    opacity: 0;
+    transition: .2s;
+        &.active-overlay {
+            pointer-events: auto;
+            opacity: 1;
+        }
+}
+
+
+@media(min-width: 768px) {
+    .overlay {
+        display: flex;
+    }
+}
